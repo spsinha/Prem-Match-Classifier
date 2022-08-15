@@ -1,8 +1,7 @@
 # Prem-Match-Classifier
 
 ToDo: <br />
-Ensure probabilities are well calibrated <br />
-Used mixed model to incorporate team level effects <br />
-Use more sophosticated method to create features <br />
-Develop more sophisticated betting strategies and optimize the existing one <br />
+Scrape the web for more data in order to creater a richer feature set. One example of some useful information available on the web 
+is whether or not the team had a mideweek game in another competiton. <br />
+Develop more sophisticated betting strategies. <br />
 
