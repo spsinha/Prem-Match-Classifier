@@ -16,12 +16,14 @@ In terms of the betting data, there is one dataset per season, each consisting o
  | Multinomial Logit | 56% | .937 |
  | Feedforward Neural Net | 56% | .938|
  
+ The similarity of the results suggests that any improvement lies in creating a richer feature space.
+ 
  In term of the betting strategies, we were able to make profit using a conservative strategy that consists in placing a bet only if the probability outputted is larger than a given threshold. (i.e. the model is sufficiently confident) The smallest threshold that yielded a profit was .725. This strategy resulted in placing 34 bets (out of 330 matches) and a 1.9% return. Increasing the threshold to .75, we place 23 bets and achieve a 7.4% return. In evaluating these results, we must be aware of the tradeoff between the number of bets placed and the return; strategies that place fewer bets tend to have a higher return but in order to make a large profit we must place a large wager on each bet which increases the variance of the strategy.  
 
 
 # Todo
 Scrape the web for more data in order to create a richer feature set. One example of some useful information available on the web 
-is whether or not the team had a mideweek game in another competition. <br />
-Develop more sophisticated betting strategies. <br />
+is whether or not the team had a mideweek game in another competition. <br/>
+Develop more sophisticated betting strategies. <br/>
 
 
