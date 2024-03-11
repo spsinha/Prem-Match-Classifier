@@ -1,3 +1,8 @@
+# Update
+Trained a new logistic regression model using a different set of features. We define the strength of a team to be the difference between its win rate and loss rate, using all the matches it has played prior the given match. We define the form of a team to be the sum of its goal difference (difference between the goals scored by a team and the goals scored by its opponent) over the past 3 games. Since a team's strength/form may vary greatly depending on whether or not it is the home team, two strengths/forms are computed for each team: one for when they are playing at home, another for when they are playing away. This leaves us with four features: Home Team Strength, Away Team Strength, Home Team Form, Away Team Form. The performance of this new model ended up being virtually identical to that of the previous logistic regression model, in terms of both log loss and accuracy.  
+
+We also implemented a betting strategy based upon the Kelly criterion. This proved to be less effective than the previous strategy which implies that the probabilities outputted by the model are not close enough to their true values to take advantage of Kelly's rule.
+
 # Problem Specification
 
 The goal of this project is to build a predictive model that is able to classify the outcome of a match in the English Premier League with enough accuracy to be able to make a profit in the betting market. The three possible outcomes are a win for the home team, a loss for the home team and a draw. We do not approach the problem using a dynamic model, whose probability vector is updated as the match progresses; instead our model outputs a single probability vector based on input that is collected prior to the start of the match.  
